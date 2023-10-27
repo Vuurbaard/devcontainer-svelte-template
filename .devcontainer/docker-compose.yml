@@ -1,0 +1,22 @@
+version: "3.9"
+name: devcontainer-svelte-template
+
+services:
+  devcontainer-svelte-template:
+    container_name: dev-devcontainer-svelte-template
+    environment:
+      - NODE_ENV=development
+    build:
+      context: ./.devcontainer
+      dockerfile: Dockerfile
+    ports:
+      - 5174:5174
+    command: /bin/sh -c "while sleep 1000; do :; done"
+    volumes:
+      - .:/workspaces:cached
+      - /workspaces/node_modules
+
+networks:
+  devcontainer-svelte-template-network:
+    name: devcontainer-svelte-template-network
+    driver: bridge

@@ -1,0 +1,18 @@
+version: "3.9"
+name: devcontainer-svelte-template
+
+services:
+  devcontainer-svelte-template:
+    extends:
+      file: docker-compose.base.yml
+      service: devcontainer-svelte-template
+    environment:
+      - NODE_ENV=production
+    build:
+      context: ./
+      dockerfile: Dockerfile
+
+networks:
+  devcontainer-svelte-template-network:
+    name: devcontainer-svelte-template-network
+    driver: bridge
