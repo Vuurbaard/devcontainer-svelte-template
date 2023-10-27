@@ -3,7 +3,6 @@
 	"name": "devcontainer-svelte-template",
 	"service": "devcontainer-svelte-template",
 	"dockerComposeFile": [ "docker-compose.yml" ],
-	"workspaceFolder": "/workspaces",
 	"remoteUser": "node",
 	"postCreateCommand": "npm install",
 	"shutdownAction": "stopCompose",
