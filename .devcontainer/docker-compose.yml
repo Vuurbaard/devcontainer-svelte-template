@@ -22,4 +22,4 @@ networks:
     driver: bridge
 
 volumes:
-  dev-devcontainer-svelte-template
+  dev-devcontainer-svelte-template:
