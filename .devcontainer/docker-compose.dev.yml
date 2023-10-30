@@ -6,9 +6,7 @@ services:
     container_name: dev-devcontainer-svelte-template
     environment:
       - NODE_ENV=development
-    # build:
-    #   context: .
-    #   dockerfile: Dockerfile
+    build: .
     ports:
       - 5174:5174
     command: /bin/sh -c "while sleep 1000; do :; done"
