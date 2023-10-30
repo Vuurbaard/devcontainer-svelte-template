@@ -5,6 +5,8 @@ services:
     build: .
     environment:
       - NODE_ENV=production
+    ports: 
+      - 3000:3000
     volumes:
       - devcontainer-svelte-template:/home/node/app
 
