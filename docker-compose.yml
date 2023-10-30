@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+  devcontainer-svelte-template:
+    container_name: devcontainer-svelte-template
+    build: .
+    environment:
+      - NODE_ENV=production
+    volumes:
+      - devcontainer-svelte-template:/home/node/app
+
+volumes:
+  devcontainer-svelte-template:
