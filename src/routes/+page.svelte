@@ -5,7 +5,7 @@
 <style lang="scss">
 
 h1 {
-  color: #ff3e00;
+  color: gold;
 }
 
 </style>
